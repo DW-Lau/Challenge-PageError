@@ -4,7 +4,58 @@ $vertS: #3c6347;
 $vertC:#8db097;
 $creme:#fce3e3;
 
+$Inter: "Inter", sans-serif;
+$Rubik:"Rubik", sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+  }
+/*-- DEBUT DECLARATION FUNCTIONS-- */
+@mixin aligment($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+  }
+  @mixin flexAlign($wrap, $justify, $align) {
+    display: flex;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+  }
+ /*-- FIN DECLARATION FUNCTIONS-- */
+
+
 body{
     background: $creme;
+   height: 100vh;
+   width: 100%;
+   overflow: hidden;
 
+   .clip-bkg{
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0 0, 85% 0%, 25% 100%, 0% 100%);
+    background: $vertS;
+    z-index: 1;
+}
+
+    header,section{
+        width: 100%;
+        z-index:15;
+    }
+    header{
+        position:relative;
+        top:0;
+        left: 0;
+        height:30%;
+        font-family: $Rubik;
+        color: $creme;
+        h1{
+            font-size: 3em;
+        }
+    }
 }

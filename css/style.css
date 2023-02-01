@@ -1,4 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+/*-- DEBUT DECLARATION FUNCTIONS-- */
+/*-- FIN DECLARATION FUNCTIONS-- */
 body {
   background: #fce3e3;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+body .clip-bkg {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  -webkit-clip-path: polygon(0 0, 85% 0%, 25% 100%, 0% 100%);
+          clip-path: polygon(0 0, 85% 0%, 25% 100%, 0% 100%);
+  background: #3c6347;
+  z-index: 1;
+}
+
+body header, body section {
+  width: 100%;
+  z-index: 15;
+}
+
+body header {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 30%;
+  font-family: "Rubik", sans-serif;
+  color: #fce3e3;
+}
+
+body header h1 {
+  font-size: 3em;
 }
 /*# sourceMappingURL=style.css.map */

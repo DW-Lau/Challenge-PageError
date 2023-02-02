@@ -15,7 +15,7 @@ body {
 }
 
 body .clip-bkg {
-  position: relative;
+  position: fixed;
   display: inline-block;
   height: 100%;
   width: 100%;
@@ -26,12 +26,12 @@ body .clip-bkg {
 }
 
 body header, body section {
+  position: relative;
   width: 100%;
   z-index: 15;
 }
 
 body header {
-  position: relative;
   top: 0;
   left: 0;
   height: 30%;

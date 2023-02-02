@@ -4,7 +4,7 @@ $vertS: #3c6347;
 $vertC:#8db097;
 $creme:#fce3e3;
 
-$Inter: "Inter", sans-serif;
+$Pop:'Poppins', sans-serif;
 $Rubik:"Rubik", sans-serif;
 * {
     margin: 0;
@@ -47,16 +47,42 @@ body{
         position:relative;
         width: 100%;
         z-index:15;
+        font-family:$Pop;    
+        color: $creme;
     }
     header{
-        
         top:0;
         left: 0;
         height:30%;
-        font-family: $Rubik;
-        color: $creme;
+        line-height:4.5em;
+        text-align: center;
         h1{
-            font-size: 3em;
+            font-size: 5.5em;
+            font-weight: 400;
+        }
+        h2{
+            font-size: 2em;
+            font-weight: 200;
+        }
+    }
+    section{
+        p{
+            position: relative;
+            left: 0;
+            max-width: 40%;
+        }
+        .taupe{
+            position: absolute;
+            right: 1%;
+            top:0;
+            width: 60%;
+
+            .dirtBkg{
+                display: block;
+                height: 60px;
+                width: 100%;
+                background-color: #000;
+            }
         }
     }
 }

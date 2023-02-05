@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 /*-- DEBUT DECLARATION FUNCTIONS-- */
@@ -18,8 +17,7 @@ body .clip-bkg {
   display: inline-block;
   height: 100%;
   width: 100%;
-  -webkit-clip-path: polygon(0 0, 85% 0%, 25% 100%, 0% 100%);
-          clip-path: polygon(0 0, 85% 0%, 25% 100%, 0% 100%);
+  clip-path: polygon(0 0, 85% 0%, 25% 100%, 0% 100%);
   background: #3c6347;
   z-index: 1;
 }
@@ -41,6 +39,7 @@ body header {
 }
 
 body header h1 {
+  padding: 2%;
   font-size: 5.5em;
   font-weight: 400;
 }
@@ -50,54 +49,55 @@ body header h2 {
   font-weight: 200;
 }
 
-body section p {
+body section {
+  bottom: 0;
   position: relative;
   left: 0;
-  max-width: 40%;
 }
 
-body section .taupe {
+body section p {
+  font-size: 1.2em;
+  max-width: 30%;
+  padding: 4%;
+  text-align: justify;
+}
+
+body section .illu--bloc {
   position: absolute;
+  bottom: 0;
   right: 1%;
-  top: 0;
   width: 60%;
 }
 
-body section .taupe .dirtBkg {
-  display: block;
-  z-index: 10;
-  -webkit-transform: translateY(435px);
-          transform: translateY(435px);
-  height: 60px;
-  width: 100%;
-  background-color: #000;
+body section .illu--bloc .dirtBkg, body section .illu--bloc .dirtFgd {
+  position: absolute;
+  top: 30vh;
+  width: 90%;
 }
 
-body section .taupe .animationTaupe {
+body section .illu--bloc .dirtBkg {
+  z-index: 25;
+  transform: translateY(3vh);
+}
+
+body section .illu--bloc .dirtFgd {
+  z-index: 10;
+}
+
+body section .illu--bloc .animationTaupe {
   width: 50%;
   z-index: 15;
   position: absolute;
-  top: 0;
-  right: 15%;
+  top: 45vh;
+  right: 30%;
 }
 
-body section .taupe .animationTaupe .animation--corps {
-  height: 500px;
+body section .illu--bloc .animationTaupe .animation--corps {
+  height: 600px;
 }
 
-body section .taupe .animationTaupe .animation--musseau {
+body section .illu--bloc .animationTaupe .animation--musseau {
   height: 100px;
-  -webkit-transform: translate(198%, -242%);
-          transform: translate(198%, -242%);
-}
-
-body section .taupe .dirtFgd {
-  display: block;
-  z-index: 25;
-  -webkit-transform: translateY(430px);
-          transform: translateY(430px);
-  height: 60px;
-  width: 100%;
-  background-color: #242424;
+  transform: translate(250%, -270%);
 }
 /*# sourceMappingURL=style.css.map */
